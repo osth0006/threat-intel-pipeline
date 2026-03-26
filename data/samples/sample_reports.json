@@ -1,0 +1,359 @@
+[
+  {
+    "report_id": "TIR-20260326-00001",
+    "timestamp": "2026-03-22T12:32:59.690029",
+    "title": "Threat Report: Malware Activity - TIR-20260326-00001",
+    "text": "New variant of WannaCry detected in the wild, exhibiting polymorphic behavior and advanced anti-analysis techniques. Initial delivery vector is T1583 (Acquire Infrastructure) with secondary payload deployment via T1134 (Access Token Manipulation). The malware establishes persistence through T1003 (OS Credential Dumping) and communicates with C2 servers at 109.16.15.24:8443. Binary analysis shows a86f0870fdea40dba58bd76c5ffa0955a4a8276150704cdcb9357aca8257e55c with modified encryption routines compared to previous versions. Affected systems span defense organizations in Oceania.",
+    "category": "malware",
+    "labels": [
+      "malware"
+    ],
+    "severity": "medium",
+    "confidence": 0.55,
+    "source": "TECHINT",
+    "tlp": "WHITE"
+  },
+  {
+    "report_id": "TIR-20260326-00002",
+    "timestamp": "2026-02-09T16:33:59.690119",
+    "title": "Threat Report: Supply Chain Activity - TIR-20260326-00002",
+    "text": "Supply chain compromise detected affecting SolarWinds Orion used by healthcare organizations in Oceania. Malicious code injection attributed to APT41 introduces WannaCry backdoor via T1003 (OS Credential Dumping). Affected versions: 5.7.x through 11.5.x. Compromise enables remote access and credential harvesting. C2 communications observed to cloud-relay234.top. Impact assessment indicates 2375 downstream organizations potentially affected since 2026-01-21.",
+    "category": "supply_chain",
+    "labels": [
+      "supply_chain"
+    ],
+    "severity": "informational",
+    "confidence": 0.86,
+    "source": "SIGINT",
+    "tlp": "RED"
+  },
+  {
+    "report_id": "TIR-20260326-00003",
+    "timestamp": "2026-02-19T15:05:59.690159",
+    "title": "Threat Report: Insider Threat Activity - TIR-20260326-00003",
+    "text": "Insider threat incident detected at telecommunications organization in Southeast Asia. Privileged user conducted unauthorized data access and exfiltration of 71GB of sensitive data via T1021 (Remote Services). Activity spanned 93 days beginning 2026-02-25. Data staged to external storage at auth-api906.cc. Behavioral indicators included after-hours access patterns and bulk download of 3763 classified documents.",
+    "category": "insider_threat",
+    "labels": [
+      "insider_threat"
+    ],
+    "severity": "critical",
+    "confidence": 0.58,
+    "source": "SIGINT",
+    "tlp": "RED"
+  },
+  {
+    "report_id": "TIR-20260326-00004",
+    "timestamp": "2026-03-17T23:25:59.690191",
+    "title": "Threat Report: Zero Day Activity - TIR-20260326-00004",
+    "text": "Active exploitation of zero-day vulnerability CVE-2024-12708 in Apache Log4j detected. Campaign attributed to Volt Typhoon targeting critical_infrastructure in South America. Exploitation chain uses T1190 (Exploit Public-Facing Application) to achieve remote code execution with SYSTEM privileges. No patch available. Mimikatz deployed post-exploitation for persistence via T1595 (Active Scanning). C2 traffic observed to 193.136.174.29:8080. CVSS: 8.5. Estimated 2162 organizations at risk. Emergency mitigations published 2026-03-20.",
+    "category": "zero_day",
+    "labels": [
+      "zero_day"
+    ],
+    "severity": "critical",
+    "confidence": 0.8,
+    "source": "TECHINT",
+    "tlp": "WHITE"
+  },
+  {
+    "report_id": "TIR-20260326-00005",
+    "timestamp": "2026-02-08T02:34:59.690225",
+    "title": "Threat Report: Malware Activity - TIR-20260326-00005",
+    "text": "New variant of WannaCry detected in the wild, exhibiting polymorphic behavior and advanced anti-analysis techniques. Initial delivery vector is T1583 (Acquire Infrastructure) with secondary payload deployment via T1486 (Data Encrypted for Impact). The malware establishes persistence through T1053 (Scheduled Task/Job) and communicates with C2 servers at 169.243.84.68:53. Binary analysis shows 026ba50c7510464bbc99c13bdfb263f9b39fe912951345fcb0830a4702be1fbf with modified encryption routines compared to previous versions. Affected systems span energy organizations in Eastern Europe.",
+    "category": "malware",
+    "labels": [
+      "malware"
+    ],
+    "severity": "informational",
+    "confidence": 0.61,
+    "source": "OSINT",
+    "tlp": "WHITE"
+  },
+  {
+    "report_id": "TIR-20260326-00006",
+    "timestamp": "2026-03-18T09:54:59.690253",
+    "title": "Threat Report: Vulnerability Activity - TIR-20260326-00006",
+    "text": "Zero-day vulnerability CVE-2025-29249 in SolarWinds Orion being actively exploited by Charming Kitten targeting education in Eastern Europe. The vulnerability enables T1053 (Scheduled Task/Job) leading to full system compromise. No vendor patch available. Temporary mitigations include network segmentation and monitoring for connections to 186.242.124.201. CVSS: 8.1. Estimated 799 vulnerable instances identified via internet scanning.",
+    "category": "vulnerability",
+    "labels": [
+      "vulnerability"
+    ],
+    "severity": "low",
+    "confidence": 0.59,
+    "source": "TECHINT",
+    "tlp": "GREEN"
+  },
+  {
+    "report_id": "TIR-20260326-00007",
+    "timestamp": "2026-01-28T18:43:59.690280",
+    "title": "Threat Report: Malware Activity - TIR-20260326-00007",
+    "text": "New variant of PlugX detected in the wild, exhibiting polymorphic behavior and advanced anti-analysis techniques. Initial delivery vector is T1055 (Process Injection) with secondary payload deployment via T1133 (External Remote Services). The malware establishes persistence through T1566 (Phishing) and communicates with C2 servers at 55.205.30.43:4443. Binary analysis shows 4e986524415f49aba2a530cb45968b8707951656164a40ed82a70ee72f08b076 with modified encryption routines compared to previous versions. Affected systems span manufacturing organizations in Africa.",
+    "category": "malware",
+    "labels": [
+      "malware"
+    ],
+    "severity": "medium",
+    "confidence": 0.53,
+    "source": "PARTNER",
+    "tlp": "RED"
+  },
+  {
+    "report_id": "TIR-20260326-00008",
+    "timestamp": "2026-01-18T06:46:59.690306",
+    "title": "Threat Report: Data Exfiltration Activity - TIR-20260326-00008",
+    "text": "Data exfiltration campaign by Cozy Bear targeting defense organizations in Oceania. Adversary leveraged T1087 (Account Discovery) for initial access and deployed Pegasus for persistent access. Data collection focused on diplomatic cables with 235GB exfiltrated to infrastructure at 64.20.41.108 over 19 days. Network traffic analysis shows DNS tunneling to data-data536.org using T1053 (Scheduled Task/Job).",
+    "category": "data_exfiltration",
+    "labels": [
+      "data_exfiltration",
+      "vulnerability"
+    ],
+    "severity": "informational",
+    "confidence": 0.63,
+    "source": "HUMINT",
+    "tlp": "WHITE"
+  },
+  {
+    "report_id": "TIR-20260326-00009",
+    "timestamp": "2026-02-07T02:39:59.690334",
+    "title": "Threat Report: Vulnerability Activity - TIR-20260326-00009",
+    "text": "Zero-day vulnerability CVE-2022-40638 in Pulse Secure VPN being actively exploited by MuddyWater targeting critical_infrastructure in South America. The vulnerability enables T1133 (External Remote Services) leading to full system compromise. No vendor patch available. Temporary mitigations include network segmentation and monitoring for connections to 77.53.68.68. CVSS: 7.6. Estimated 2236 vulnerable instances identified via internet scanning.",
+    "category": "vulnerability",
+    "labels": [
+      "vulnerability"
+    ],
+    "severity": "high",
+    "confidence": 0.82,
+    "source": "HUMINT",
+    "tlp": "GREEN"
+  },
+  {
+    "report_id": "TIR-20260326-00010",
+    "timestamp": "2026-01-14T13:22:59.690361",
+    "title": "Threat Report: Ddos Activity - TIR-20260326-00010",
+    "text": "Distributed denial of service attack targeting transportation infrastructure in South America. Attack attributed to APT29 using T1548 (Abuse Elevation Control Mechanism) amplification vectors. Peak traffic volume reached 1688 Gbps sustained over 21 hours beginning 2026-01-08. Source IPs primarily from botnet infrastructure previously associated with SolarWinds SUNBURST. Mitigation engaged at network edge. 331 service endpoints affected.",
+    "category": "ddos",
+    "labels": [
+      "ddos",
+      "supply_chain"
+    ],
+    "severity": "low",
+    "confidence": 0.9,
+    "source": "SIGINT",
+    "tlp": "AMBER"
+  },
+  {
+    "report_id": "TIR-20260326-00011",
+    "timestamp": "2025-12-27T08:25:59.690391",
+    "title": "Threat Report: Phishing Activity - TIR-20260326-00011",
+    "text": "Large-scale phishing campaign attributed to DarkSide targeting finance personnel in North America. Attack chain uses T1078 (Valid Accounts) with lure documents themed around security clearance renewal. Credential harvesting infrastructure hosted at edge-service991.top mimics legitimate finance portals. Campaign has compromised approximately 2291 accounts since 2025-08-02. Email headers reveal origin IP 169.98.204.85 with SPF/DKIM bypass techniques.",
+    "category": "phishing",
+    "labels": [
+      "phishing"
+    ],
+    "severity": "medium",
+    "confidence": 0.86,
+    "source": "HUMINT",
+    "tlp": "RED"
+  },
+  {
+    "report_id": "TIR-20260326-00012",
+    "timestamp": "2026-01-20T08:25:59.690417",
+    "title": "Threat Report: Zero Day Activity - TIR-20260326-00012",
+    "text": "Active exploitation of zero-day vulnerability CVE-2025-20681 in Barracuda ESG detected. Campaign attributed to MuddyWater targeting critical_infrastructure in East Asia. Exploitation chain uses T1595 (Active Scanning) to achieve remote code execution with SYSTEM privileges. No patch available. WannaCry deployed post-exploitation for persistence via T1059 (Command and Scripting Interpreter). C2 traffic observed to 94.220.35.243:80. CVSS: 8.5. Estimated 1025 organizations at risk. Emergency mitigations published 2025-08-14.",
+    "category": "zero_day",
+    "labels": [
+      "zero_day"
+    ],
+    "severity": "high",
+    "confidence": 0.81,
+    "source": "HUMINT",
+    "tlp": "RED"
+  },
+  {
+    "report_id": "TIR-20260326-00013",
+    "timestamp": "2026-03-26T02:31:59.690443",
+    "title": "Threat Report: Data Exfiltration Activity - TIR-20260326-00013",
+    "text": "Data exfiltration campaign by REvil targeting manufacturing organizations in Africa. Adversary leveraged T1059.001 (PowerShell) for initial access and deployed ShadowPad for persistent access. Data collection focused on credentials databases with 24GB exfiltrated to infrastructure at 173.109.242.204 over 38 days. Network traffic analysis shows DNS tunneling to proxy-update675.com using T1547 (Boot or Logon Autostart Execution).",
+    "category": "data_exfiltration",
+    "labels": [
+      "data_exfiltration"
+    ],
+    "severity": "critical",
+    "confidence": 0.73,
+    "source": "PARTNER",
+    "tlp": "GREEN"
+  },
+  {
+    "report_id": "TIR-20260326-00014",
+    "timestamp": "2026-01-21T23:34:59.690468",
+    "title": "Threat Report: Insider Threat Activity - TIR-20260326-00014",
+    "text": "Insider threat incident detected at education organization in Africa. Privileged user conducted unauthorized data access and exfiltration of 133GB of sensitive data via T1055 (Process Injection). Activity spanned 122 days beginning 2026-01-30. Data staged to external storage at node-auth684.info. Behavioral indicators included after-hours access patterns and bulk download of 4583 classified documents.",
+    "category": "insider_threat",
+    "labels": [
+      "insider_threat",
+      "zero_day"
+    ],
+    "severity": "low",
+    "confidence": 0.81,
+    "source": "HUMINT",
+    "tlp": "RED"
+  },
+  {
+    "report_id": "TIR-20260326-00015",
+    "timestamp": "2026-02-18T04:32:59.690494",
+    "title": "Threat Report: Malware Activity - TIR-20260326-00015",
+    "text": "Threat researchers have identified a previously undocumented malware family, designated Pegasus, being deployed by Cozy Bear against energy targets. The malware features modular architecture with plugins for keylogging, screen capture, and credential harvesting via T1560 (Archive Collected Data). Command and control communications use encrypted DNS tunneling to auth-api64.net. Samples analyzed: f4aa8ba341864c16af35c2bc831f1ba40ce33ee365ce496b81ba97ad6ba39fca.",
+    "category": "malware",
+    "labels": [
+      "malware"
+    ],
+    "severity": "informational",
+    "confidence": 0.9,
+    "source": "SIGINT",
+    "tlp": "RED"
+  },
+  {
+    "report_id": "TIR-20260326-00016",
+    "timestamp": "2026-02-19T22:18:59.690518",
+    "title": "Threat Report: Vulnerability Activity - TIR-20260326-00016",
+    "text": "Critical vulnerability CVE-2021-31257 discovered in widely deployed VMware vCenter affecting manufacturing organizations globally. The flaw allows remote code execution via T1110 (Brute Force) without authentication. CVSS score: 7.5. Exploitation in the wild confirmed, with Volt Typhoon actively leveraging the vulnerability. Patch available from vendor as of 2025-04-12. Affected versions: 7.5.x through 4.7.x. Recommended immediate patching and IOC scanning for 87a840ecc4854a52b75627d38adefd07e6b32b8e28564249b4ab942c0f50174b.",
+    "category": "vulnerability",
+    "labels": [
+      "vulnerability"
+    ],
+    "severity": "low",
+    "confidence": 0.51,
+    "source": "PARTNER",
+    "tlp": "WHITE"
+  },
+  {
+    "report_id": "TIR-20260326-00017",
+    "timestamp": "2026-02-25T15:45:59.690543",
+    "title": "Threat Report: Supply Chain Activity - TIR-20260326-00017",
+    "text": "Supply chain compromise detected affecting Fortinet FortiOS used by finance organizations in Eastern Europe. Malicious code injection attributed to Nobelium introduces QakBot backdoor via T1569 (System Services). Affected versions: 5.1.x through 10.0.x. Compromise enables remote access and credential harvesting. C2 communications observed to portal-node378.net. Impact assessment indicates 4968 downstream organizations potentially affected since 2025-12-13.",
+    "category": "supply_chain",
+    "labels": [
+      "supply_chain"
+    ],
+    "severity": "medium",
+    "confidence": 0.93,
+    "source": "PARTNER",
+    "tlp": "WHITE"
+  },
+  {
+    "report_id": "TIR-20260326-00018",
+    "timestamp": "2026-03-21T00:15:59.690568",
+    "title": "Threat Report: Zero Day Activity - TIR-20260326-00018",
+    "text": "Active exploitation of zero-day vulnerability CVE-2025-35193 in VMware vCenter detected. Campaign attributed to REvil targeting telecommunications in Africa. Exploitation chain uses T1021 (Remote Services) to achieve remote code execution with SYSTEM privileges. No patch available. Emotet deployed post-exploitation for persistence via T1557 (Adversary-in-the-Middle). C2 traffic observed to 28.221.185.163:9090. CVSS: 9.9. Estimated 1447 organizations at risk. Emergency mitigations published 2025-07-09.",
+    "category": "zero_day",
+    "labels": [
+      "zero_day",
+      "ddos"
+    ],
+    "severity": "high",
+    "confidence": 0.88,
+    "source": "PARTNER",
+    "tlp": "RED"
+  },
+  {
+    "report_id": "TIR-20260326-00019",
+    "timestamp": "2026-03-22T19:55:59.690595",
+    "title": "Threat Report: Supply Chain Activity - TIR-20260326-00019",
+    "text": "Supply chain compromise detected affecting Atlassian Confluence used by transportation organizations in Southeast Asia. Malicious code injection attributed to REvil introduces Conti Ransomware backdoor via T1087 (Account Discovery). Affected versions: 8.0.x through 2.4.x. Compromise enables remote access and credential harvesting. C2 communications observed to proxy-api501.info. Impact assessment indicates 1973 downstream organizations potentially affected since 2025-09-25.",
+    "category": "supply_chain",
+    "labels": [
+      "supply_chain"
+    ],
+    "severity": "informational",
+    "confidence": 0.67,
+    "source": "PARTNER",
+    "tlp": "AMBER"
+  },
+  {
+    "report_id": "TIR-20260326-00020",
+    "timestamp": "2025-12-26T21:32:59.690621",
+    "title": "Threat Report: Supply Chain Activity - TIR-20260326-00020",
+    "text": "Supply chain compromise detected affecting Fortinet FortiOS used by energy organizations in East Asia. Malicious code injection attributed to Lazarus Group introduces WannaCry backdoor via T1595 (Active Scanning). Affected versions: 5.0.x through 12.8.x. Compromise enables remote access and credential harvesting. C2 communications observed to node-sync612.org. Impact assessment indicates 828 downstream organizations potentially affected since 2025-12-17.",
+    "category": "supply_chain",
+    "labels": [
+      "supply_chain"
+    ],
+    "severity": "low",
+    "confidence": 0.55,
+    "source": "OSINT",
+    "tlp": "AMBER"
+  },
+  {
+    "report_id": "TIR-20260326-00021",
+    "timestamp": "2026-01-23T21:28:59.690646",
+    "title": "Threat Report: Ddos Activity - TIR-20260326-00021",
+    "text": "Distributed denial of service attack targeting defense infrastructure in Oceania. Attack attributed to LockBit using T1059 (Command and Scripting Interpreter) amplification vectors. Peak traffic volume reached 1214 Gbps sustained over 40 hours beginning 2026-01-26. Source IPs primarily from botnet infrastructure previously associated with BADFLICK. Mitigation engaged at network edge. 975 service endpoints affected.",
+    "category": "ddos",
+    "labels": [
+      "ddos"
+    ],
+    "severity": "critical",
+    "confidence": 0.97,
+    "source": "SIGINT",
+    "tlp": "GREEN"
+  },
+  {
+    "report_id": "TIR-20260326-00022",
+    "timestamp": "2026-01-01T09:39:59.690671",
+    "title": "Threat Report: Ransomware Activity - TIR-20260326-00022",
+    "text": "Ransomware incident attributed to BlackCat affiliate program impacting transportation organization in Africa. Initial access gained via T1087 (Account Discovery) followed by deployment of ShadowPad. Encryption of 588 systems completed within 30 hours of initial compromise. Ransom demand: $1320K in cryptocurrency. Data exfiltration confirmed prior to encryption, with 466GB staged to 75.16.118.74. Recovery operations ongoing since 2026-01-04.",
+    "category": "ransomware",
+    "labels": [
+      "ransomware",
+      "supply_chain"
+    ],
+    "severity": "informational",
+    "confidence": 0.87,
+    "source": "PARTNER",
+    "tlp": "AMBER"
+  },
+  {
+    "report_id": "TIR-20260326-00023",
+    "timestamp": "2026-03-10T21:05:59.690696",
+    "title": "Threat Report: Ddos Activity - TIR-20260326-00023",
+    "text": "Distributed denial of service attack targeting defense infrastructure in Oceania. Attack attributed to Charming Kitten using T1082 (System Information Discovery) amplification vectors. Peak traffic volume reached 619 Gbps sustained over 62 hours beginning 2025-07-12. Source IPs primarily from botnet infrastructure previously associated with ShadowPad. Mitigation engaged at network edge. 4717 service endpoints affected.",
+    "category": "ddos",
+    "labels": [
+      "ddos"
+    ],
+    "severity": "low",
+    "confidence": 0.98,
+    "source": "TECHINT",
+    "tlp": "AMBER"
+  },
+  {
+    "report_id": "TIR-20260326-00024",
+    "timestamp": "2026-02-12T01:07:59.690720",
+    "title": "Threat Report: Insider Threat Activity - TIR-20260326-00024",
+    "text": "Insider threat incident detected at telecommunications organization in South America. Privileged user conducted unauthorized data access and exfiltration of 321GB of sensitive data via T1087 (Account Discovery). Activity spanned 160 days beginning 2025-04-04. Data staged to external storage at cdn-service994.top. Behavioral indicators included after-hours access patterns and bulk download of 3316 classified documents.",
+    "category": "insider_threat",
+    "labels": [
+      "insider_threat",
+      "phishing"
+    ],
+    "severity": "medium",
+    "confidence": 0.72,
+    "source": "TECHINT",
+    "tlp": "WHITE"
+  },
+  {
+    "report_id": "TIR-20260326-00025",
+    "timestamp": "2026-01-04T15:58:59.690745",
+    "title": "Threat Report: Apt Activity - TIR-20260326-00025",
+    "text": "Advanced persistent threat group OilRig has been observed conducting a sophisticated cyber espionage campaign targeting defense organizations in East Asia. The operation leverages PlugX for initial access via T1082 (System Information Discovery). Post-compromise activity includes lateral movement using T1087 (Account Discovery) and data staging for exfiltration. The campaign has been active since 2025-06-16 and affects an estimated 2395 entities. IOC analysis reveals C2 infrastructure at 216.58.236.243 communicating over port 443.",
+    "category": "apt",
+    "labels": [
+      "apt",
+      "ddos"
+    ],
+    "severity": "medium",
+    "confidence": 0.97,
+    "source": "PARTNER",
+    "tlp": "AMBER"
+  }
+]
