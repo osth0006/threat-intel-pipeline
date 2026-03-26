@@ -108,7 +108,6 @@ class ThreatIntelPipeline:
                 entity_count = sum(len(v) for v in entities.values())
                 total_entities += entity_count
                 entity_records.append(entities)
-                self.db.store_entities(row["report_id"], entities)
 
             df["entities"] = entity_records
             results["total_entities"] = total_entities
@@ -122,9 +121,11 @@ class ThreatIntelPipeline:
             results["n_classified"] = len(predictions)
             progress.update(task, completed=True, description=f"[green]Classified {len(predictions)} reports (F1={train_metrics['f1_micro']:.3f})")
 
-            # Stage 5: Storage
+            # Stage 5: Storage (reports first, then entities to satisfy foreign key)
             task = progress.add_task("Storing results in DuckDB...", total=None)
             self.db.store_reports(df)
+            for _, row in df.iterrows():
+                self.db.store_entities(row["report_id"], row["entities"])
             self.db.store_classifications(
                 df["report_id"].tolist(), predictions, classifier_type
             )
