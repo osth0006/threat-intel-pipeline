@@ -64,7 +64,25 @@ flowchart LR
 - **Dual classifier architecture**: Fast TF-IDF baseline + transformer zero-shot/fine-tuned models
 - **Pipeline tracking**: Run metadata, metrics, and results persisted for reproducibility
 
-## Quick Start
+## Quick Start with Docker
+
+```bash
+# Run the full pipeline with default settings
+docker-compose up
+
+# Run with CLI options
+docker-compose run pipeline python cli.py run --n-reports 500
+
+# View CLI help
+docker-compose run pipeline python cli.py --help
+
+# Classify a single text
+docker-compose run pipeline python cli.py classify "APT28 deployed Cobalt Strike via spear-phishing"
+```
+
+Volumes `./data` and `./output` are mounted into the container so generated data and charts persist on your host machine.
+
+## Quick Start (Local)
 
 ### Installation
 
@@ -130,6 +148,9 @@ threat-intel-pipeline/
 ├── cli.py                          # Click CLI interface
 ├── pyproject.toml                  # Project configuration
 ├── requirements.txt                # Dependencies
+├── Dockerfile                      # Container image definition
+├── docker-compose.yml              # Docker Compose service config
+├── .dockerignore                   # Docker build exclusions
 ├── src/
 │   ├── __init__.py
 │   ├── pipeline.py                 # Pipeline orchestrator
